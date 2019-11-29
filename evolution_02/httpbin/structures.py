@@ -25,3 +25,8 @@ class CaseInsensitiveDict(dict):
         # We allow fall-through here, so values default to None
         if key in self:
             return self.items()[self._lower_keys().index(key.lower())][1]
+
+
+if __name__ == '__main__':
+    headers = {}
+    CaseInsensitiveDict(headers.items())

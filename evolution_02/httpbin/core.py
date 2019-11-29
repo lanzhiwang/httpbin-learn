@@ -27,8 +27,9 @@ ENV_COOKIES = (
     '__utmb'
 )
 
+print '__name__: {}'.format(__name__)
 app = Flask(__name__)
-
+print 'app: {}'.format(app)
 
 # ------
 # Routes
@@ -38,7 +39,7 @@ app = Flask(__name__)
 @app.route('/')
 def view_landing_page():
     """Generates Landing Page."""
-
+    print('route /')
     return render_template('index.html')
 
 

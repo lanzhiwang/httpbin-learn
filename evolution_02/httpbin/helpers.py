@@ -71,6 +71,7 @@ def get_headers(hide_env=True):
     return CaseInsensitiveDict(headers.items())
 
 
+# get_dict('headers')
 def get_dict(*keys, **extras):
     """Returns request dict of given keys."""
 

@@ -12,5 +12,6 @@ except (KeyError, ValueError):
     port = 5000
 
 print 'Starting httpbin on port {0}'.format(port)
+print 'app: {}'.format(app)
 http_server = WSGIServer(('', port), app)
 http_server.serve_forever()
